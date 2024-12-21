@@ -10,8 +10,8 @@ namespace homeWorkSumNumber
             int number;
             int numberMin = -100;
             int numberMax = 100;
-            int multipleThree = 3;
-            int multipleFive = 5;
+            int multipleNumberMin = 3;
+            int multipleNumberMax = 5;
 
             Random rand = new Random();
             number = rand.Next(numberMin,numberMax);
@@ -20,7 +20,7 @@ namespace homeWorkSumNumber
 
             for (int i = number; i <= numberMax; i++)
             { 
-            if (i > 0 && (i % multipleThree == 0 || i % multipleFive == 0))
+            if (i > 0 && (i % multipleNumberMin == 0 || i % multipleNumberMax == 0))
                 {
                     sum += i;
                 }
